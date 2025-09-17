@@ -1,10 +1,10 @@
 # BangIt Estimator Privacy Policy
 
-This repository contains the privacy policy for the **BangIt Estimator** iOS app, hosted as a GitHub Pages site.
+This repository contains the privacy policy for the **BangIt Estimator** iOS app by BangIt Services, hosted as a GitHub Pages site.
 
 ## About BangIt Estimator
 
-BangIt Estimator is a construction cost estimation app that helps contractors and homeowners calculate project costs by selecting items from various construction categories and generating professional PDF estimates.
+BangIt Estimator is a construction cost estimation app developed by BangIt Services that helps contractors and homeowners calculate project costs by selecting items from various construction categories and generating professional PDF estimates.
 
 ## Privacy Policy
 
@@ -38,9 +38,9 @@ Your privacy policy will be available at: `https://xs-grogan-dev.github.io/bangi
 ## Contact
 
 For questions about the privacy policy or app:
-- **Email**: zack@grogan.dev
-- **Phone**: (509) 579-6119
-- **Developer**: Zackariah Grogan
+- **Company**: BangIt Services
+- **Email**: support@bangitservices.com
+- **App Support**: Available through the App Store
 
 ## App Details
 

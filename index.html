@@ -4,80 +4,249 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BangIt Estimator - Privacy Policy</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <style>
+        :root {
+            --primary-color: #2E8B57;
+            --secondary-color: #228B22;
+            --accent-color: #FF6B35;
+            --text-color: #333;
+            --text-light: #666;
+            --background: #fff;
+            --surface: #f8f9fa;
+            --border: #e9ecef;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            color: #333;
-            background-color: #fff;
+            color: var(--text-color);
+            background-color: var(--background);
+            background-image: 
+                linear-gradient(135deg, rgba(46, 139, 87, 0.02) 0%, rgba(34, 139, 34, 0.02) 100%);
+            min-height: 100vh;
         }
+        
         .header {
             text-align: center;
-            border-bottom: 2px solid #007AFF;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 40px 20px;
+            margin: -20px -20px 40px -20px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 20px var(--shadow);
         }
+        
+        .header img {
+            height: 80px;
+            margin-bottom: 20px;
+            filter: brightness(0) invert(1);
+            transition: transform 0.3s ease;
+        }
+        
+        .header img:hover {
+            transform: scale(1.05);
+        }
+        
         .app-name {
-            color: #007AFF;
-            font-size: 2.5em;
-            font-weight: 700;
+            font-size: 2.8em;
+            font-weight: 800;
             margin: 0;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: -0.5px;
         }
+        
         .subtitle {
-            color: #666;
-            font-size: 1.1em;
-            margin: 10px 0 0 0;
+            font-size: 1.3em;
+            margin: 15px 0 0 0;
+            opacity: 0.95;
+            font-weight: 300;
         }
+        
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            background: var(--background);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 15px var(--shadow);
+            border: 1px solid var(--border);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
+        
+        .section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 25px var(--shadow);
+        }
+        
         .section h2 {
-            color: #007AFF;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
+            color: var(--primary-color);
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--primary-color);
+            position: relative;
         }
+        
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--accent-color);
+        }
+        
+        .section h3 {
+            color: var(--secondary-color);
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
         .contact-info {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #007AFF;
+            background: linear-gradient(135deg, var(--surface) 0%, #e8f5e8 100%);
+            padding: 35px;
+            border-radius: 15px;
+            border-left: 6px solid var(--primary-color);
+            box-shadow: 0 4px 20px var(--shadow);
+            position: relative;
+            overflow: hidden;
         }
+        
+        .contact-info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: var(--primary-color);
+            opacity: 0.05;
+            border-radius: 50%;
+            transform: translate(30px, -30px);
+        }
+        
+        .contact-info h2 {
+            margin-top: 0;
+        }
+        
         .last-updated {
             font-style: italic;
-            color: #666;
+            color: var(--text-light);
             text-align: center;
-            margin-top: 40px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
+            margin-top: 50px;
+            padding: 25px;
+            border-top: 2px solid var(--border);
+            background: var(--surface);
+            border-radius: 10px;
+            font-size: 0.95em;
         }
+        
         ul {
-            padding-left: 20px;
+            padding-left: 0;
+            list-style: none;
         }
-        li {
-            margin-bottom: 8px;
+        
+        ul li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.7;
         }
-        @media (prefers-color-scheme: dark) {
+        
+        ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+        
+        a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+        
+        strong {
+            color: var(--text-color);
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        
+        @media (max-width: 768px) {
             body {
-                background-color: #1a1a1a;
-                color: #e5e5e5;
+                padding: 10px;
             }
+            
+            .header {
+                padding: 30px 15px;
+                margin: -10px -10px 30px -10px;
+            }
+            
+            .app-name {
+                font-size: 2.2em;
+            }
+            
+            .section {
+                padding: 20px;
+                margin-bottom: 25px;
+            }
+            
             .contact-info {
-                background-color: #2a2a2a;
+                padding: 25px;
             }
-            .section h2 {
-                border-bottom-color: #333;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #3CB371;
+                --secondary-color: #32CD32;
+                --text-color: #e5e5e5;
+                --text-light: #a8a8a8;
+                --background: #1a1a1a;
+                --surface: #2a2a2a;
+                --border: #404040;
+                --shadow: rgba(0, 0, 0, 0.3);
             }
-            .last-updated {
-                border-top-color: #333;
+            
+            body {
+                background-image: 
+                    linear-gradient(135deg, rgba(60, 179, 113, 0.03) 0%, rgba(50, 205, 50, 0.03) 100%);
+            }
+            
+            .header img {
+                filter: brightness(0) invert(1);
+            }
+            
+            .contact-info {
+                background: linear-gradient(135deg, var(--surface) 0%, #2d4a2d 100%);
             }
         }
     </style>
 </head>
 <body>
     <div class="header">
+        <img src="logo.png" alt="BangIt Services" style="height: 60px; margin-bottom: 15px;">
         <h1 class="app-name">BangIt Estimator</h1>
         <p class="subtitle">Privacy Policy</p>
     </div>
@@ -85,7 +254,7 @@
     <div class="section">
         <h2>Introduction</h2>
         <p>
-            This Privacy Policy describes how BangIt Estimator ("we," "our," or "us") collects, uses, and protects your information when you use our mobile application. We are committed to protecting your privacy and ensuring you have a positive experience using our app.
+            This Privacy Policy describes how BangIt Services and our BangIt Estimator application ("we," "our," or "us") collects, uses, and protects your information when you use our mobile application. We are committed to protecting your privacy and ensuring you have a positive experience using our app.
         </p>
     </div>
 
@@ -164,10 +333,11 @@
         <h2>Contact Us</h2>
         <p>If you have any questions about this Privacy Policy or our practices, please contact us:</p>
         <ul>
-            <li><strong>Email:</strong> <a href="mailto:zack@grogan.dev">zack@grogan.dev</a></li>
-            <li><strong>Phone:</strong> (509) 579-6119</li>
-            <li><strong>Developer:</strong> Zackariah Grogan</li>
+            <li><strong>Company:</strong> BangIt Services</li>
+            <li><strong>Email:</strong> <a href="mailto:support@bangitservices.com">support@bangitservices.com</a></li>
+            <li><strong>App Support:</strong> Available through the App Store</li>
         </ul>
+        <p><em>For technical support, please use the support options available through your device's App Store.</em></p>
     </div>
 
     <div class="last-updated">
