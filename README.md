@@ -8,7 +8,7 @@ BangIt Estimator is a construction cost estimation app developed by BangIt Servi
 
 ## Privacy Policy
 
-The privacy policy is available at: https://xs-grogan-dev.github.io/bangit-estimator-privacy-policy/
+The privacy policy is available at: https://xpress-development.github.io/bangit-estimator-privacy-policy/
 
 ## Key Privacy Features
 
@@ -33,7 +33,7 @@ The privacy policy is available at: https://xs-grogan-dev.github.io/bangit-estim
 4. Select "main" branch and "/ (root)" folder
 5. Save settings
 
-Your privacy policy will be available at: `https://xs-grogan-dev.github.io/bangit-estimator-privacy-policy/`
+Your privacy policy will be available at: `https://xpress-development.github.io/bangit-estimator-privacy-policy/`
 
 ## Contact
 
